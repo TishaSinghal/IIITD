@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+import React from "react";
+import { Tilt } from "react-tilt";
+
+
+
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+    
+    <section className={`relative w-full h-screen mx-12 mx-auto`}>
+    <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-slate-500`}>
-            Hi, I'm <span className='text-[#915EFF]'>Tisha</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-slate-400`}>
-            I'm a student, developing  <br className='sm:block hidden' />
-            user interfaces and web applications
-          </p>
-        </div>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[20px] max-w-5xl leading-[30px] font-weight: 500'
+      >     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor error distinctio inventore enim tempore iusto a, itaque et suscipit autem quam doloribus quisquam. Est asperiores suscipit molestias necessitatibus pariatur quia praesentium voluptatum hic quaerat. Totam adipisci libero quo nostrum veritatis dignissimos facilis ipsum, modi ab consequuntur a nobis, neque error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deserunt quod inventore suscipit exercitationem esse mollitia, sed laudantium vero necessitatibus beatae, nobis dolores. Nostrum, dolor maiores. Hic, ex 
+      </motion.p>
 
-      <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
+      
+
+      <div className='absolute mt-20 w-full flex justify-center items-center'>
+        <a href='#services'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
@@ -45,7 +45,8 @@ const Hero = () => {
         </a>
       </div>
     </section>
+    
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "about");

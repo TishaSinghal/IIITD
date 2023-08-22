@@ -1,4 +1,5 @@
 import {
+  logo,
     mobile,
     backend,
     creator,
@@ -35,36 +36,40 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "services",
+      title: "Services",
     },
     {
-      id: "contact",
-      title: "Contact",
+      id: "blogs",
+      title: "Blogs",
     },
+    {
+      id: "feedback",
+      title: "Feedback",
+    }
     
   ];
   
   const services = [
     {
-      title: "Resume",
+      title: "Deforestation",
       icon: web,
-      link: "https://drive.google.com/drive/folders/1JqGFxIsfVd3dLDuXd50Tgo3CyUHZqFFx?usp=drive_link",
+      link: "",
     },
     {
-      title: "Linkedin",
-      icon: mobile,
-      link: "https://www.linkedin.com/in/tisha-singhal-1b7460227/",
-    },
-    {
-      title: "Github",
+      title: "Agricultural Patterns",
       icon: backend,
-      link: "https://github.com/TishaSinghal",
+      link: "",
     },
     {
-      title: "Leetcode",
+      title: "Disaster assesment",
       icon: creator,
-      link: "https://leetcode.com/Tisha_03/" ,
+      link: "" ,
+    },
+     {
+      title: "Urban Growth",
+      icon: mobile,
+      link: "",
     },
   ];
   
@@ -210,85 +215,54 @@ import {
   
   const projects = [
     {
-      name: "Card Payment",
-      wlink: "https://react-website-two-beryl.vercel.app/",
+      name: "loremipsum",
+      wlink: "",
       description:
-        "Web-based modern platform for a company that deals with card payment.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: cardpay,
-      source_code_link: "https://github.com/TishaSinghal/ReactWebsite",
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
     },
     {
-      name: "Newsletter Style",
-      wlink: "https://tishasinghal.github.io/Newsletter/",
+      name: "loremipsum",
+      wlink: "",
       description:
-        "Web application that resembles a newsletter format. A unique formatted website.",
-      tags: [
-        {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: newsletter,
-      source_code_link: "https://github.com/TishaSinghal/Newsletter",
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
     },
     {
-      name: "Ecommerce Platform",
-      wlink:"https://tishasinghal.github.io/Ecommerce/",
+      name: "loremipsum",
+      wlink: "",
       description:
-        "A responsive ecommerce platform with a blog and contact page.",
-      tags: [
-        {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: ecommerce,
-      source_code_link: "https://github.com/TishaSinghal/Ecommerce",
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
     },
     {
-      name: "Luck Game",
+      name: "loremipsum",
+      wlink: "",
       description:
-        "A luck based gamed build on javascript for better understanding of concepts.",
-      tags: [
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: luckgame,
-      source_code_link: "https://github.com/TishaSinghal/GamblingGame",
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
     },
-
+    {
+      name: "loremipsum",
+      wlink: "",
+      description:
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
+    },
+    {
+      name: "loremipsum",
+      wlink: "",
+      description:
+        "loremipsum1ooooo jbewkfkwlf qefw n khwhfew k ",
+      image: logo,
+      source_code_link: "",
+    }
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

@@ -24,7 +24,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-20 h-20 object-contain rounded-full border-8 border-solid border-white '
+          className='w-16 h-16 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -38,20 +38,19 @@ const ServiceCard = ({ index, title, icon, link }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <div>
+        
+        <div>
+          <h1 className={`${styles.sectionHeadText} text-white`}>
+            Examine Data<span className='text-[#915EFF]'></span>
+          </h1>
+          <p className={`${styles.sectionSubText} mt-1 text-white-100`}>
+            Lorem ipsum dolor sit. <br className='sm:block hidden' />
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+      </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-slate-600 text-[20px] max-w-3xl leading-[30px] font-weight: 500'
-      > I'm a skilled developer with experience in JavaScript and Reactjs.
-        I'm a quick learner with good command on problem solving analytical skills.
-        Ultimately a detail-oriented individual who collaborates closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index, link) => (
@@ -62,4 +61,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, "services");
